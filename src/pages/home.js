@@ -1,10 +1,8 @@
 import React from 'react'
-import Jubmotron from '../components/jumbotron'
+import { JumbotronContainer } from '../containers/jumbotron'
 
 export default function Home() {
     return (
-        <Jubmotron.Container>
-            <Jubmotron.Title>hello</Jubmotron.Title>
-        </Jubmotron.Container>
+        <JumbotronContainer />
     )
 }
