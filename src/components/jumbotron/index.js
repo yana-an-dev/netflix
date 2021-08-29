@@ -11,6 +11,8 @@ export default function Jumbotron({ children, direction = 'row', ...restProps })
     )
 }
 
+//compound component design pattern 
+
 Jumbotron.Container = function JumbotronContainer({ children, ...restProps }) {
     return <Container {...restProps}>{children}</Container>
 }

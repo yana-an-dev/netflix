@@ -1,10 +1,11 @@
 import styled from 'styled-components/macro'
 //macro gives component names, it makes much easier for debugging
 
-
+//  template literal ${}, ()=>{} call back function, 
+// {direction}: Destructure form of props.direction
 export const Inner = styled.div`
     display: flex;
-    flex-direction: ${({ direction }) => direction};
+    flex-direction: ${({ direction }) => direction}; 
     align-items: center;
     justfy-content: space-between;
     max-width: 1100px;
