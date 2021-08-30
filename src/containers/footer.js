@@ -4,7 +4,7 @@ import { Footer } from '../components'
 export function FooterContainer() {
     return (
         <Footer>
-            <Footer.Title>Questions? Contact us.</Footer.Title>
+            <Footer.Title>Questions? Phone 1800 875 462</Footer.Title>
             <Footer.Break />
             <Footer.Row>
                 <Footer.Column>
@@ -12,7 +12,7 @@ export function FooterContainer() {
                     <Footer.Link href="#">Investor Relations</Footer.Link>
                     <Footer.Link href="#">Ways to Watch</Footer.Link>
                     <Footer.Link href="#">Corporate Information</Footer.Link>
-                    <Footer.Link href="#">Netflix Originals</Footer.Link>
+                    <Footer.Link href="#">Only on Netflix</Footer.Link>
                 </Footer.Column>
 
                 <Footer.Column>
