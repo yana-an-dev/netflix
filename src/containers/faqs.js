@@ -18,8 +18,9 @@ export function FaqsContainer() {
             </Accordion.Frame>
 
             <OptForm>
+                <OptForm.Text>Ready to watch Netflix? Enter your email to create or restart your membership.</OptForm.Text>
                 <OptForm.Input placeholder="Email Address" />
-
+                <OptForm.Button>Try it now</OptForm.Button>
             </OptForm>
 
 
