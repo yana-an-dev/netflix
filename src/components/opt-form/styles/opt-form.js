@@ -8,7 +8,7 @@ export const Container = styled.div`
     flex-wrap: wrap;
 
     @media(max-width: 1000px){
-        flex-directin: column;
+        flex-direction: column;
         align-items: center;
     }
     `
@@ -18,7 +18,7 @@ export const Input = styled.input`
     width: 100%;
     border: 0;
     padding: 10px;
-    height: 70px;
+    height: 60px;
     box-sizing: border-box;
 
     `
@@ -26,10 +26,9 @@ export const Input = styled.input`
 export const Button = styled.button`
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60px;
     background: #e50914;
     color: white;
-    text-transform: uppercase;
     padding: 0 32px;
     font-size: 26px;
     border: none;
@@ -48,7 +47,7 @@ export const Button = styled.button`
         background: #f40612;
     }
 
-    @media (max-width: 756px){
+    @media (max-width: 1000px){
         height: 50px;
         font-size: 16px;
         margin-top: 20px;
