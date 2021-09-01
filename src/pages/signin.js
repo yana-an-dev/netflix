@@ -9,6 +9,8 @@ export default function Signin() {
     const [emailAddress, setEmailAddress] = useState('')
     const [password, setPassword] = useState('')
 
+    const isInValid = emailAddress === '' | password === ''
+
     const handleSignin = (event) => {
 
         //call in here to firebase to authenticate the user
@@ -35,7 +37,7 @@ export default function Signin() {
                             autoComplete="off"
                             onChange={({ target }) => setPassword(target.value)}
                         />
-                        <Form.Submit disabled={false} type="submit">
+                        <Form.Submit disabled={isInValid} type="submit">
                             Sign In
                         </Form.Submit>
 
@@ -43,7 +45,7 @@ export default function Signin() {
                             New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
                         </Form.Text>
                         <Form.TextSmall>
-                            This page is protected by Google reCAPTCHA.
+                            This page is protected by Google reCAPTCHA to ensure you're not a bot.
                         </Form.TextSmall>
                     </Form.Base>
                 </Form>
