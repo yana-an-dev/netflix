@@ -9,7 +9,7 @@ import { FirebaseContext } from './context/firebase'
 
 render(
     <>
-        <FirebaseContext.Provider value={{ firebase }}>
+        <FirebaseContext.Provider value={{ firebase: window.firebase }}>
             <GlobalStyle />
             <App />
         </FirebaseContext.Provider>
