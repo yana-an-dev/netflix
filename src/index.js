@@ -1,8 +1,9 @@
-import React from 'react';
-import { render } from 'react-dom';
-//entry point
-import { GlobalStyle } from './global-styles';
-import App from './app';
+import React from 'react'
+import App from './app'
+import { render } from 'react-dom'
+import { GlobalStyle } from './global-styles'
+import { firebase } from './lib/firebase.prod'
+
 
 
 render(
