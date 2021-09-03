@@ -7,7 +7,7 @@ export const Background = styled.div`
     background: url(${({ src }) => (src ? `../images/misc/${src}.jpg` :
         '../images/misc/home-bg.jpg')}) top left /cover no-repeat;
 
-    @media(max - width: 1100px) {
+    @media(max-width: 1100px) {
             ${ ({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
         }
     `
@@ -28,6 +28,11 @@ export const Container = styled.div`
         margin: 0 30px;
     }
     `
+export const Group = styled.div`
+    display: flex;
+    align-items: center;
+`
+
 
 export const Link = styled.p`
     color: #fff;
@@ -75,3 +80,9 @@ export const Logo = styled.img`
     }`
 
 
+export const Text = styled.p`
+    color: white;
+    font-size: 22px;
+    line-height: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45)
+    `
