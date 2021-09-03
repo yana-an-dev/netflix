@@ -1,6 +1,17 @@
 import React from 'react'
 import { Link as ReachRouterLink } from 'react-router-dom'
-import { Link, Group, Background, Container, Text, Logo, ButtonLink } from './styles/header'
+import {
+    Link,
+    Group,
+    Background,
+    Container,
+    Text,
+    Logo,
+    ButtonLink,
+    Feature,
+    FeatureCallOut,
+    PlayButton
+} from './styles/header'
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? <Background {...restProps}>{children}</Background>
@@ -33,4 +44,14 @@ Header.Link = function HeaderLink({ children, ...restProps }) {
 }
 Header.Text = function HeaderText({ children, ...restProps }) {
     return <Text {...restProps}>{children}</Text>
+}
+Header.Feature = function HeaderFeature({ children, ...restProps }) {
+    return <Feature {...restProps}>{children}</Feature>
+}
+Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
+    return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>
+}
+
+Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
+    return <PlayButton {...restProps}>{children}</PlayButton>
 }
