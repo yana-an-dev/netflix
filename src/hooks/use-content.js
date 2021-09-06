@@ -8,7 +8,7 @@ export default function useContent(target) {
     useEffect(() => {
         firebase
             .firestore()
-            .collection(target)
+            .collection(target) //target-series or films
             .get()
             .then((snapshot) => {
                 const allContent = snapshot.docs.map((contentObj) => (
@@ -23,5 +23,5 @@ export default function useContent(target) {
                 console.log(error.message)
             })
     }, [])
-    return { [target]: content }
+    return { [target]: content } //??
 }
