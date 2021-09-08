@@ -8,9 +8,10 @@ import {
     Text,
     Feature,
     FeatureTitle,
+    FeatureText,
     FeatureClose,
     Maturity,
-    Context,
+    Content,
     Meta,
     Entities,
     Item,
@@ -34,9 +35,11 @@ export default function Card({ children, ...restProps }) {
 Card.Group = function CardGroup({ children, ...restProps }) {
     return <Group {...restProps}>{children}</Group>
 }
+
 Card.Title = function CardTitle({ children, ...restProps }) {
     return <Title {...restProps}>{children}</Title>
 }
+
 Card.SubTitle = function CardSubTitle({ children, ...restProps }) {
     return <SubTitle {...restProps}>{children}</SubTitle>
 }
@@ -54,8 +57,8 @@ Card.Item = function CardItem({ item, children, ...restProps }) {
     return (
         <Item
             onClick={() => {
-                setItemFeature(item)
-                setShowFeature(true)
+                setItemFeature(item) // ?
+                setShowFeature(true) // ok.
             }}
             {...restProps}
         >
