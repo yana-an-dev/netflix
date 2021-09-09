@@ -3,12 +3,15 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom'
 import { Route } from 'react-router-dom'
 import * as ROUTES from './constants/routes'
 import { Home, Signin, Signup, Browse } from './pages'
-
+import { useAuthListener } from './hooks'
 
 // import jumboData from './fixtures/jumbo'
 // import Jumbotron from './components/jumbotron'
 
 export default function App() {
+  const { user } = useAuthListener()
+
+  console.log(user)
   return (
     <Router>
       <Switch>
