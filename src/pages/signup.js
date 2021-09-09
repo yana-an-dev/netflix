@@ -38,7 +38,11 @@ export default function Signup() {
                         setError('')
                         history.push(ROUTES.BROWSE)
                     })
-            ).catch((error) => setError(error.message))
+            ).catch((error) => {
+                setEmailAddress('')
+                setPassword('')
+                setError(error.message)
+            })
 
     }
 
