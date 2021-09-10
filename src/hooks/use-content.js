@@ -22,6 +22,7 @@ export default function useContent(target) {
             .catch((error) => {
                 console.log(error.message)
             })
+        // eslint-disable-next-line
     }, [])
     return { [target]: content } //??
 }

@@ -34,6 +34,7 @@ Player.Video = function PlayerVideo({ ...restProps }) {
 };
 
 Player.Button = function PlayerButton({ ...restProps }) {
+    // eslint-disable-next-line
     const { showPlayer, setShowPlayer } = useContext(PlayerContext);
 
     return (
