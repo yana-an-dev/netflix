@@ -7,7 +7,7 @@ import { useAuthListener } from './hooks'
 import { IsUserRedirect, ProtectedRoute } from './helpers/routes'
 
 
-export default function app() {
+export default function App() {
   const { user } = useAuthListener()
   return (
     <Router>
