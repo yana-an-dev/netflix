@@ -1,6 +1,6 @@
 # React Project: Netflix Clone
 
-URL: [https://serene-jang-2d5ebe.netlify.app/]
+URL: [https://yana-netflix-clone.netlify.app/]
 
 React (custom hooks, context, portals), Firebase (Firestore/auth), Compound & Styled components. This React project has multiple pages: Home, Browse (which uses Firebase authentication), sign in, and sign up. 
 
